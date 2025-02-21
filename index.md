@@ -31,7 +31,7 @@
 ## Methods
   Determining how effective of an approach SwiftGuard is requires testing it on numerous prompts which we have collected and categorized into three distinct groups:
   
-![alt text](images/sg_pipeline.png “The SwiftGuard Pipeline”)
+![alt text](/images/sg_pipeline.png “The SwiftGuard Pipeline”)
 
 ## Results
 
