@@ -2,13 +2,17 @@
 
 ## Introduction
 
-Large language models (LLMs), such as ChatGPT, are increasingly being deployed across industries, from healthcare to finance. Despite their widespread utility, these models remain vulnerable to jailbreaking attacks that evade safety guardrails to generate objectionable content upon the request of a user with mal-intent. This vulnerability undermines trust and limits LLM deployment in sensitive domains.
+Large language models (LLMs), such as ChatGPT, are increasingly being deployed across industries, from healthcare to finance. Despite their widespread utility, these models remain vulnerable to jailbreaking attacks that evade safety guardrails to generate objectionable content upon the request of a user with malicious intent. This vulnerability undermines trust and limits LLM deployment in sensitive domains.
 
 <center>
 <details>
-<summary><span style="color:blue">Our Antagonist</span></summary>
+<summary><span style="color:blue">Our Antagonists</span></summary>
 <br>
-PAIR (Prompt Automatic Iterative Response) uses recursivity and prompt-based jailbreaking to get around the embedded safeguards that are present in LLMs. Prompt-based jailbreaking is a social-engineering based strategy in which certain techniques are used to change the semantics or context of a malicious prompt to make it appear safer to the LLM. Prior to algorithms like PAIR, these jailbreaks were created purely by humans. PAIR introduces an automatic approach that jailbreaks LLMs with little-to-no human involvement.
+PAIR (Prompt Automatic Iterative Response) uses recursivity and prompt-based jailbreaking to get around the embedded safeguards that are present in LLMs. Prompt-based jailbreaking is a social-engineering based strategy in which certain techniques are used to change the semantics or context of a malicious prompt to make it appear safer to the LLM.
+
+GCG (Greedy Coordinate Gradient) appends a malicious prompt with a suffix that is optimized to ellicit the intended by containing numerous specific tokens that are prompted to the target LLM until a successful jailbreak.
+ 
+Prior to algorithms including PAIR and GCG, jailbreaks were created purely by humans. These methods introduce automatic approaches to jailbreaking LLMs that rely on little-to-no human effort.
 </details>
 </center>
 
