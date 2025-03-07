@@ -83,22 +83,16 @@ Rejection...
 
 
 ## Results
-$$
-\begin{table}[h]
-    \centering 
-    \begin{tabular}{|c|c|c|c|c|} 
-    \hline 
-    \textbf{Method} & \textbf{TPR} & \textbf{FPR} & \textbf{F1 Score} & \textbf{Time (ms)} \\ 
-    \hline 
-    Baseline 1 & ? & ? & ? & ? \\ 
-    Baseline 2 & ? & ? & ? & ?\\ 
-    SwiftGuard & ? & ? & ? & ? \\ 
-    \hline 
-    \end{tabular}
-    \caption{Baseline Performance Metrics} 
-    \label{tab:performance_metrics} \end{table}
-$$
+| Method                                          | TPR ⬆️   | FPR ⬇️    | F_1 ⬆️   | Time ⬇️  |
+|-------------------------------------------------|----------|----------|----------|----------|
+| SwiftGuard                                      | 88.08%   | 9.67%    | 85.48%   | 0.3s     |
+| SwiftGuard with a Preliminary Classifier        | 86.5%    | 0.50%    | 92.51%   | 4.62s    |
+
 
 ## Conclusion
+
+SwiftGuard proves that it can classify attacks well, while still responding to a strong majority of benign prompts quickly enough. When a preliminary classifier is added, it further improves in how many innocent prompts it responds to, while maintaining similar robustness in rejecting nefarious ones. This comes at the price of time though, as the overall pipeline takes an average of about 15 times longer than SwiftGuard alone. A company or organization planning to implement SwiftGuard can consider the ins and outs of their respective industry to make a well-informed decision of including the preliminary classifier based on if they desire prioritizing the optimization of runtime or safety.
+
+Overall, when comparing either SwiftGuard variant to other cutting-edge LLM defenses, such as SemanticSmooth, SwiftGuard protects the LLM with comparable accuracy and improved speed, preserving the experience of the standard user best.
 
 ### Our group of [Donald Taggart](https://www.example.com), [Arman Rahman](https://www.example.com), [Shreya Sudan](https://www.example.com), and [Dante Testini](https://www.example.com) would like to thank our mentors [Barna Saha (Mentor)](https://barnasaha.net/) and [Arya Mazumdar (Mentor)](https://mazumdar.ucsd.edu/)
