@@ -1,5 +1,3 @@
-# SwiftGuard-Website
-
 ## Introduction
 
 Large language models (LLMs), such as ChatGPT, are increasingly being deployed across industries, from healthcare to finance. Despite their widespread utility, these models remain vulnerable to jailbreaking attacks that evade safety guardrails to generate objectionable content upon the request of a user with malicious intent. This vulnerability undermines trust and limits LLM deployment in sensitive domains.
@@ -7,35 +5,38 @@ Large language models (LLMs), such as ChatGPT, are increasingly being deployed a
 <center>
 <details>
 <summary><span style="color:blue">Our Antagonists</span></summary>
-<br>
-PAIR (Prompt Automatic Iterative Response) uses recursivity and prompt-based jailbreaking to get around the embedded safeguards that are present in LLMs. Prompt-based jailbreaking is a social-engineering based strategy in which certain techniques are used to change the semantics or context of a malicious prompt to make it appear safer to the LLM.
-
+<br>PAIR (Prompt Automatic Iterative Response) uses recursivity and prompt-based jailbreaking to get around the embedded safeguards that are present in LLMs. Prompt-based jailbreaking is a social-engineering based strategy in which certain techniques are used to change the semantics or context of a malicious prompt to make it appear safer to the LLM.
+<p>
 GCG (Greedy Coordinate Gradient) appends a malicious prompt with a suffix that is optimized to ellicit the intended by containing numerous specific tokens that are prompted to the target LLM until a successful jailbreak.
- 
+</p>
+<p>
 Prior to algorithms including PAIR and GCG, jailbreaks were created purely by humans. These methods introduce automatic approaches to jailbreaking LLMs that rely on little-to-no human effort.
+</p>
 </details>
 </center>
 
 <center>
 <details>
 <summary><span style="color:blue">Our "Imperfect" Protagonist</span></summary>
-<br>
-SemanticSmooth, a recently invented LLM defense, mitigates PAIR's tactics by employing semantic perturbations and aggregating predictions to detect and then deny adversarial attacks. However, its reliance on reinforcement learning introduces significant computational overhead and performance trade-offs, particularly for benign prompts. The excessive installation of this defense significantly slows down the process, especially for the strong majority of LLM users who only pose benign prompts.
+<br>SemanticSmooth, a recently invented LLM defense, mitigates PAIR's tactics by employing semantic perturbations and aggregating predictions to detect and then deny adversarial attacks. However, its reliance on reinforcement learning introduces significant computational overhead and performance trade-offs, particularly for benign prompts. The excessive installation of this defense significantly slows down the process, especially for the strong majority of LLM users who only pose benign prompts.
 </details>
 </center>
 
 <center>
 <details>
 <summary><span style="color:blue">Our "Perfected" Protagonist</span></summary>
-<br>
- Addressing this runtime inefficiency is critical for ensuring that defending LLMs can be both robust in detecting adversarial prompts and computationally efficient for prompts of all kinds. Our proposal focuses on replacing the reinforcement learning component with an algorithmic framework that does not rely on a constantly changing policy network. This framework detects attacks with only a single pass and is centered around a support vector machine (SVM) model that analyzes the difference in logit distributions between prompts. This method will not only preserve robustness but also enhance efficiency in terms of inference time which results in a quick response time for benign prompts, hence being dubbed "SwiftGuard".
+<br>Addressing this runtime inefficiency is critical for ensuring that defending LLMs can be both robust in detecting adversarial prompts and computationally efficient for prompts of all kinds. Our proposal focuses on replacing the reinforcement learning component with an algorithmic framework that does not rely on a constantly changing policy network. This framework detects attacks with only a single pass and is centered around a support vector machine (SVM) model that analyzes the difference in logit distributions between prompts. This method will not only preserve robustness but also enhance efficiency in terms of inference time which results in a quick response time for benign prompts, hence being dubbed "SwiftGuard".
 </details>
 </center>
 
 ## Methods
 Determining how effective of an approach SwiftGuard is requires testing it on numerous prompts which we have collected and categorized into three distinct groups:
   
-![alt text](/images/sg_pipeline.png “The SwiftGuard Pipeline”)
+![alt text](/images/max_token_probability_distributions.png “Max Token Probability Distributions”)
+
+![alt text](/images/entropy_distributions.png “Entropy Distributions”)
+
+![alt text](/images/t-snes.png “t-snes”)
 
 ### Before SwiftGuard
 <details>
