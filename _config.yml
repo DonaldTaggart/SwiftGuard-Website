@@ -7,6 +7,5 @@ markdown: kramdown
 kramdown:
   input: GFM
 sass:
-  style: compressed
-stylesheets:
-  - "/SwiftGuard-Website/assets/css/style.css"
+  style: compresses
+  
