@@ -32,11 +32,11 @@ Prior to algorithms including PAIR and GCG, jailbreaks were created purely by hu
 ## Methods
 Determining how effective of an approach SwiftGuard is requires testing it on numerous prompts which we have collected and categorized into three distinct groups:
   
-![alt text](/images/max_token_probability_distributions.png “Max Token Probability Distributions”)
+![“Max Token Probability Distributions”](images/max_token_probability_distributions.png)
 
-![alt text](/images/entropy_distributions.png “Entropy Distributions”)
+![“Entropy Distributions”](images/entropy_distributions.png)
 
-![alt text](/images/t-snes.png “t-snes”)
+![“t-snes”](images/t-snes.png)
 
 ### Before SwiftGuard
 <details>
