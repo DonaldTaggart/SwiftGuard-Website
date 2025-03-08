@@ -1,15 +1,43 @@
-table {
+/* Center all elements (headers, paragraphs, tables, etc.) */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text within elements */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the main container to avoid text being too stretched */
+.container {
   width: 100%;
-  border-collapse: collapse;
+  max-width: 960px; /* Limit the width to make the content not too stretched */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 20px;
+}
+
+/* Center the table headers and data */
+table {
   margin: 20px 0;
+  width: 80%; /* Set table width to a reasonable size */
+  border-collapse: collapse;
+  text-align: center;
 }
 
 th, td {
-  padding: 8px;
+  padding: 8px 12px;
   text-align: center;
   border: 1px solid #ddd;
 }
 
-h2, h3 {
-  text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; /* Ensure headers are centered */
+}
+
+/* Optionally, center specific elements like images */
+img {
+  display: block;
+  margin: 0 auto;
 }
