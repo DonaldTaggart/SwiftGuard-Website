@@ -9,4 +9,4 @@ kramdown:
 sass:
   style: compressed
 stylesheets:
-  - "/assets/css/style.css"
+  - "/SwiftGuard-Website/assets/css/style.css"
