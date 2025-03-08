@@ -8,3 +8,5 @@ kramdown:
   input: GFM
 sass:
   style: compressed
+stylesheets:
+  - "/assets/css/style.css"
