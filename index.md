@@ -41,23 +41,18 @@ Prior to algorithms including PAIR and GCG, jailbreaks were created purely by hu
 Determining how effective of an approach SwiftGuard is requires testing it on numerous prompts which we have collected and categorized into three distinct groups:
 
 It can be observed that the max token probability distribution is much greater on average for benign prompts than for adversarial ones:
-![“Max Token Probability Distributions”](images/max_token_probability_distributions.png)
-<div style="width: 75%;">
-  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/max_token_probability_distributions.png" style="width: 100%;">
+<div>
+  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/max_token_probability_distributions.png" style="width: 75%;">
 </div>
 
 This leads there to be less entropy among the tokens for a benign prompt token than that of an adversarial one:
-![“Entropy Distributions”](images/entropy_distributions.png)
-<img src="/SwiftGuard-Website/images/entropy_distributions.png" width="75%">
-<div style="width: 75%;">
-  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/entropy_distributions.png" style="width: 100%;">
+<div>
+  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/entropy_distributions.png" style="width: 75%;">
 </div>
 
 The tokens for each prompt can be converted into a feature vector. Generally speaking, those representing benign prompts are noticeably different than those of adversarial ones.  The human eye can visualize this with a t-distributed stochastic neighbor embedding plot that reduces each point to two dimensions:
-![“t-snes”](images/t-snes.png)
-<img src="/SwiftGuard-Website/images/t-snes.png" width="75%">
-<div style="width: 75%;">
-  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/t-snes.png" style="width: 100%;">
+<div>
+  <img src="https://donaldtaggart.github.io/SwiftGuard-Website/images/t-snes.png" style="width: 75%;">
 </div>
 
 <div style="display: flex; align-items: center;">
