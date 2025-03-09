@@ -102,8 +102,6 @@ While gaining unauthorized access to a critical system is a serious offense with
   </details>
 </div>
 
-
-### After SwiftGuard
 <div style="display: flex; align-items: center;">
   <details>
     <summary><span style="color:blue">Adversarial Prompt</span></summary>
