@@ -48,7 +48,7 @@ This leads there to be less entropy among the tokens for a benign prompt token t
 ![“Entropy Distributions”](images/entropy_distributions.png)
 <img src="{{ site.baseurl }}/images/entropy_distributions.png" width="75%">
 
-The tokens for each prompt can be converted into a feature vector. Those representing benign prompts are noticeably different than those of adversarial ones.  The human eye can visualize this with a t-distributed stochastic neighbor embedding plot that reduces each point to two dimensions:
+The tokens for each prompt can be converted into a feature vector. Generally speaking, those representing benign prompts are noticeably different than those of adversarial ones.  The human eye can visualize this with a t-distributed stochastic neighbor embedding plot that reduces each point to two dimensions:
 ![“t-snes”](images/t-snes.png)
 <img src="{{ site.baseurl }}/images/t-snes.png" width="75%">
 
