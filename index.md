@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="/SwiftGuard-Website/assets/css/style.css">
+
 ## Introduction
 
 Large language models (LLMs), such as ChatGPT, are increasingly being deployed across industries, from healthcare to finance. Despite their widespread utility, these models remain vulnerable to jailbreaking attacks that evade safety guardrails to generate objectionable content upon the request of a user with malicious intent. This vulnerability undermines trust and limits LLM deployment in sensitive domains.
