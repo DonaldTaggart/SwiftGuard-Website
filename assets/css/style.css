@@ -1,3 +1,6 @@
+@import "{{ site.theme }}";
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
 /* Center all elements (headers, paragraphs, tables, etc.) */
 body {
   display: flex;
