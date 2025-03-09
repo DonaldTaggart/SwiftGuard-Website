@@ -125,7 +125,7 @@ While gaining unauthorized access to a critical system is a serious offense with
 | SwiftGuard                                      | 88.08%   | 9.67%    | 85.48%   | 0.3s     |
 | SwiftGuard with a Preliminary Classifier        | 86.5%    | 0.50%    | 92.51%   | 4.62s    |
 
-
+In addition to the aforementioned FPR, analyzing the true positive rate (TPR) allows us to measure SwiftGuard's aptitude at detecting adversarial prompts. We have also considered the $F_1$ score as it provides more insight on the nuance of SwiftGuard's abilities given it considers false negatives (adversarial prompts predicted to be benign) on top of the TPR and FPR. We also took note of the average response time per prompt in order to consider SwiftGuard's speed relative to other methods with the metric that is most relevant to the everyday user.
 
 ## Conclusion
 
@@ -133,4 +133,7 @@ SwiftGuard proves that it can classify attacks well, while still responding to a
 
 Overall, when comparing either SwiftGuard variant to other cutting-edge LLM defenses, such as SemanticSmooth, SwiftGuard protects the LLM with comparable accuracy and improved speed, preserving the experience of the standard user best.
 
-### Our group of [Donald Taggart](https://www.example.com), [Arman Rahman](https://www.example.com), [Shreya Sudan](https://www.example.com), and [Dante Testini](https://www.example.com) would like to thank our mentors [Barna Saha (Mentor)](https://barnasaha.net/) and [Arya Mazumdar (Mentor)](https://mazumdar.ucsd.edu/)
+#### Our undergraduate team:
+#### [Donald Taggart](https://github.com/DonaldTaggart) [Arman Rahman](https://github.com/armann01) [Shreya Sudan](https://github.com/shreyasudan) [Dante Testini](https://github.com/Dante-t0)
+#### Our mentors:
+#### [Barna Saha (Mentor)](https://barnasaha.net/) [Arya Mazumdar (Mentor)](https://mazumdar.ucsd.edu/)
